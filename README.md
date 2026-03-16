@@ -16,6 +16,60 @@ The tool parses SSH login logs, detects suspicious IP addresses based on repeate
 
 ---
 
+## 🏗 Architecture
+```
+                 ┌───────────────────┐
+                 │   SSH Log File    │
+                 └─────────┬─────────┘
+                           │
+                           ▼
+                ┌───────────────────┐
+                │   log_parser.py   │
+                │  Extract events   │
+                └─────────┬─────────┘
+                          │
+                          ▼
+                ┌───────────────────┐
+                │ attack_detector.py│
+                │ Detect attackers  │
+                └─────────┬─────────┘
+                          │
+                          ▼
+                ┌───────────────────┐
+                │report_generator.py│
+                │ Security report   │
+                └─────────┬─────────┘
+                          │
+                          ▼
+                    User Output
+
+
+Optional Real-Time Monitoring Mode
+----------------------------------
+
+                 ┌───────────────────┐
+                 │     monitor.py    │
+                 │  Watches log file│
+                 └─────────┬─────────┘
+                           │
+                           ▼
+                    SSH Log File
+                           │
+                           ▼
+                    log_parser.py
+                           │
+                           ▼
+                  attack_detector.py
+                           │
+                           ▼
+                 report_generator.py
+                           │
+                           ▼
+                      Live Alerts
+```
+
+---
+
 ## 🗂 Project Structure
 
 ```
