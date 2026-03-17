@@ -102,7 +102,7 @@ ssh-bruteforce-detector
 Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/ssh-bruteforce-detector.git
+git clone https://github.com/navanil-das/ssh-bruteforce-detector.git
 cd ssh-bruteforce-detector
 ```
 
