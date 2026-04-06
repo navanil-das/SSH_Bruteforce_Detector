@@ -160,5 +160,5 @@ Top Attackers
 
 **Navanil Das**
 
-- GitHub: [https://github.com/yourusername](https://github.com/navanil-das)
-- LinkedIn: [https://linkedin.com/in/yourprofile](https://www.linkedin.com/in/navanil-das-83ba41296/)
+- GitHub: [https://github.com/navanil-das](https://github.com/navanil-das)
+- LinkedIn: [https://linkedin.com/in/navanil-das](https://www.linkedin.com/in/navanil-das-83ba41296/)
